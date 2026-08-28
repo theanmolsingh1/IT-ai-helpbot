@@ -14,7 +14,6 @@ load_dotenv()
 DOCS_DIR = Path(__file__).parent.parent / "doc"
 def read_pdfs():
     text = ""
-
     for pdf_file in sorted(DOCS_DIR.glob("*.pdf")):
         text += f"\n\n===== {pdf_file.name} =====\n\n"
 
