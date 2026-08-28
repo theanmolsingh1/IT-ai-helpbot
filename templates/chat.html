@@ -1,0 +1,37 @@
+-<!DOCTYPE html>
+<html>
+<head>
+    <title>IT Helpdesk Chat</title>
+</head>
+
+<body>
+
+    <h1>IT Helpdesk</h1>
+
+    <div>
+        <p>AI: Hello! How can I help you?</p>
+    </div>
+
+    <form action="/search" method="POST">
+
+        <input
+            type="text"
+            name="query"
+            placeholder="Describe your IT issue..."
+        >
+
+        <button type="submit">
+            Send
+        </button>
+
+    </form>
+
+    {% if answer %}
+    <div>
+        <strong>AI:</strong>
+        {{ answer }}
+    </div>
+    {% endif %}
+
+</body>
+</html>
