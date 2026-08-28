@@ -10,8 +10,6 @@ import fitz  # PyMuPDF
 # from backend.rag import answer, text_to_vectors
 
 load_dotenv()
-
-
 # pdf reading.
 DOCS_DIR = Path(__file__).parent.parent / "doc"
 def read_pdfs():
