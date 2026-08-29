@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ticket Status</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f5f7fa;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 25px;
+            color: #222;
+        }
+
+        .ticket-info {
+            background: #f1f3f5;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        .ticket-info p {
+            margin: 12px 0;
+            color: #444;
+        }
+
+        .status {
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .button:hover {
+            background: #1d4ed8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Ticket Status</h1>
+
+        <div class="ticket-info">
+
+            <p>
+                <strong>Ticket Query:</strong>
+                {{ query }}
+            </p>
+
+            <p>
+                <strong>Status:</strong>
+                <span class="status">{{ status }}</span>
+            </p>
+
+            <p>
+                <strong>Created On:</strong>
+                {{ date }}
+            </p>
+
+        </div>
+
+        <a href="/chat" class="button">
+            Back to Chat
+        </a>
+
+    </div>
+
+</body>
+</html>

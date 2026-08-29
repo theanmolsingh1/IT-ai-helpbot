@@ -55,4 +55,38 @@ def generate_res_for_rag(query):
         model="gemini-3.6-flash",
         contents = prompt   
    )
+   return response.text
+
+
+
+def generate_ticket_id(query):
+   prompt = f"""
+   -you are a bot who will get the query and you have to return the ticket id.
+   - suppose you will get sentence like "hey give me status/information/update about my my ticket id 1232hdwek232" so here ticket id is 1232hdwek232 and you have to return only this.
+   - no hello hi, always to the point.
+   - you are a ticket id returner bot.
+   - return only the ticket id in string form without anything else.
+
+   user query:
+   {query}
+   """
+   response = client.models.generate_content(
+      model="gemini-3.6-flash",
+      contents=prompt
+   )
+   return response.text.strip()
+
+
+def generate_general_response(query):
+   prompt = f""" 
+   -you are a bot for IT-problem solving assistance, give response without sending hi, hello etc.
+   -you have to help in short and standard way
+
+   user query:
+   {query}
+"""
+   response = client.models.generate_content(
+      model="gemini-3.6-flash",
+      contents=prompt
+   )
    return response

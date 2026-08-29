@@ -1,25 +1,166 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>AI IT Helpdesk</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #eef2ff, #f8fafc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #1e293b;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 850px;
+            text-align: center;
+            background: white;
+            padding: 60px 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+        }
+
+        .icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 25px;
+            background: #2563eb;
+            color: white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 38px;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            color: #0f172a;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            color: #475569;
+            margin-bottom: 15px;
+        }
+
+        .description {
+            max-width: 600px;
+            margin: 0 auto 35px;
+            font-size: 16px;
+            line-height: 1.7;
+            color: #64748b;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 35px;
+        }
+
+        .feature {
+            padding: 10px 16px;
+            background: #f1f5f9;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #475569;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.2s ease;
+        }
+
+        .button:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 13px;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 600px) {
+
+            .container {
+                padding: 40px 25px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .subtitle {
+                font-size: 18px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>AI IT Helpdesk</h1>
+    <div class="container">
 
-    <p>
-        Your intelligent assistant for IT support.
-    </p>
+        <div class="icon">
+            🛠️
+        </div>
 
-    <p>
-        Get help with troubleshooting, access requests,
-        software issues and IT tickets.
-    </p>
+        <h1>AI IT Helpdesk</h1>
 
-    <a href="/chat">
-        <button>Start Chatting</button>
-    </a>
+        <p class="subtitle">
+            Your intelligent assistant for IT support.
+        </p>
+
+        <p class="description">
+            Get instant help with troubleshooting, software issues,
+            access requests, and IT support tickets — all in one place.
+        </p>
+
+        <div class="features">
+            <div class="feature">🔧 Troubleshooting</div>
+            <div class="feature">🎫 Ticket Creation</div>
+            <div class="feature">🔍 Ticket Status</div>
+            <div class="feature"> AI Assistance</div>
+        </div>
+
+        <a href="/chat" class="button">
+            Start Chatting →
+        </a>
+
+        <p class="footer">
+            Powered by AI • Fast • Simple • Intelligent
+        </p>
+
+    </div>
 
 </body>
+
 </html>
+
